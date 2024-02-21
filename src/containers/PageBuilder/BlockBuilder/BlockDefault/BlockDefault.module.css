@@ -1,0 +1,57 @@
+/* .root {
+} */
+
+.block_background {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(#dadada, #ffd387);
+  display: block;
+  z-index: -1;
+  left: 8%;
+}
+
+.inner_block {
+  margin: 25px;
+  margin-left: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.booking_btn {
+  display: flex;
+  justify-content: end;
+}
+
+.media {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+.card_text {
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.card_text:first-child {
+  margin-top: 0;
+}
+
+.card_text p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.33;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--colorGrey900);
+  word-break: break-all;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+.card_text h3 {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 3px;
+}
