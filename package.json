@@ -120,8 +120,9 @@
     "postinstall": "patch-package",
     "translate": "node scripts/translations.js",
     "stage-backend": "node server/apiServer.js",
+    "stage-frontend": "BROWSER=none sharetribe-scripts start",
     "build-stage": "yarn run config-check && cross-env NODE_ENV=development REACT_APP_DEV_API_SERVER_PORT=3500 yarn build",
-    "stage": "cross-env concurrently --kill-others \"yarn run stage-backend\" \"yarn run dev-frontend\""
+    "stage": "cross-env concurrently --kill-others \"yarn run stage-backend\" \"yarn run stage-frontend\""
   },
   "browserslist": {
     "production": [

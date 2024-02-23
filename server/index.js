@@ -17,7 +17,9 @@
 require('source-map-support').install();
 
 // Configure process.env with .env.* files
-require('./env').configureEnv();
+// require('./env').configureEnv();
+
+require('dotenv').config({ path: `.env.development` });
 
 const fs = require('fs');
 const express = require('express');
