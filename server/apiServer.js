@@ -2,7 +2,10 @@
 // server/index.js server also serves the API routes.
 
 // Configure process.env with .env.* files
-require('./env').configureEnv();
+// require('./env').configureEnv();
+
+require('dotenv').config({ path: `.env.development` });
+
 
 const express = require('express');
 const compression = require('compression');
